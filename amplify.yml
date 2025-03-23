@@ -6,7 +6,7 @@ frontend:
         - npm install
     build:
       commands:
-        - env | grep -e NEXTAUTH_URL -e NEXTAUTH_SECRET -e GITHUB_ID -e GITHUB_SECRET -e VALID_ACCOUNT_EMAILS >> .env.production
+#        - env | grep -e NEXTAUTH_URL -e NEXTAUTH_SECRET -e GITHUB_ID -e GITHUB_SECRET -e VALID_ACCOUNT_EMAILS >> .env.production
         - npm run build
   artifacts:
     baseDirectory: .next
